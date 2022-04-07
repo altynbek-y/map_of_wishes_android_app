@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "365089261866",
+    "firebase_url": "https://dreamapp-936cf.firebaseio.com",
+    "project_id": "dreamapp-936cf",
+    "storage_bucket": "dreamapp-936cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365089261866:android:63290ada4a63888a22b653",
+        "android_client_info": {
+          "package_name": "com.unicef.dreamapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365089261866-rgm3e2j8c4j4fsn216l131a2la6o2q8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unicef.dreamapp2",
+            "certificate_hash": "9a8881d1d68947ff7caed3ca681d29ff4450107d"
+          }
+        },
+        {
+          "client_id": "365089261866-eh7lt0k59osekasl00sqq9iug3nmubhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unicef.dreamapp2",
+            "certificate_hash": "d39b4aab13c2e6fae83683282f52c8d10a14bb9e"
+          }
+        },
+        {
+          "client_id": "365089261866-0io0s278cggqq9v9ah161gqu65o4i4kj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZzS1IHntJpVeBnbM5fMfg6apAcbZBD2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365089261866-0io0s278cggqq9v9ah161gqu65o4i4kj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

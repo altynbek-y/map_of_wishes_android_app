@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+      <item
+          android:id="@+id/chat"
+          android:icon="@drawable/ic_outline_chat_24"
+          android:title="@string/chat_title"
+          android:checkable="false" />
+      <item
+          android:id="@+id/rating"
+          android:icon="@drawable/ic_outline_thumb_up_24"
+          android:title="@string/rating_title"
+          android:checkable="false" />
+      <item
+          android:id="@+id/change_profile"
+          android:icon="@drawable/ic_outline_account_box_24"
+          android:title="@string/cabinet_title"
+          android:checkable="false" />
+      <item
+          android:id="@+id/question"
+          android:icon="@drawable/ic_outline_question_answer_24"
+          android:title="@string/questions_title"
+          android:checkable="false" />
+      <item
+          android:id="@+id/language"
+          android:icon="@drawable/ic_outline_language_24"
+          android:title="@string/language_title"
+          android:checkable="false" />
+      <item
+          android:id="@+id/psychologicalhelp"
+          android:icon="@drawable/ic_baseline_favorite_border_24"
+          android:title="@string/psychological_help"
+          android:checkable="false" />
+      <item
+          android:id="@+id/logout"
+          android:icon="@drawable/ic_exit"
+          android:title="@string/exit_title"
+          android:checkable="false" />
+  </group>
+</menu>

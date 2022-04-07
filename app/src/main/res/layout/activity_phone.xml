@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help1"
+    android:gravity="center"
+    tools:context=".ui.login.PhoneActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/phone_edit_layout"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/keypad_bg2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/edittext_height"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            app:ccp_contentColor="@color/white"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_defaultLanguage="RUSSIAN"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true"
+            app:ccpDialog_showPhoneCode="true" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:paddingLeft="10dp"
+            android:paddingRight="13dp"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:hint="@string/phone_number_hint_text"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:background="@drawable/keypad_bg2"
+        android:layout_margin="10dp"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:textColor="@color/white"
+        android:onClick="onClickVerify"
+        android:inputType="textCapSentences"
+        android:textSize="16dp"
+        android:text="@string/action_sign_in" />
+</LinearLayout>
+
+<!--
+    android:onClick="onClickVerify"
+-->

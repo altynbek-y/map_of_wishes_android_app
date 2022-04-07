@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="help_array">
+        <item>Лекарства</item>
+        <item>Продукты</item>
+        <item>СИЗ</item>
+        <item>Попутка</item>
+        <item>Помощь(SOS)</item>
+    </string-array>
+</resources>

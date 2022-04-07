@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/help1"
+    android:gravity="center"
+    tools:context=".ui.welcome.WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/volunteerBtn"
+        android:background="@drawable/keypad_bg2"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:gravity="center"
+        android:inputType="textCapSentences"
+        android:textColor="@color/white"
+        android:onClick="openVolunteerLogin"
+        android:textSize="16dp"
+        android:text="@string/want_to_help_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personBtn"
+        android:background="@drawable/keypad_bg2"
+        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:gravity="center"
+        android:inputType="textCapSentences"
+        android:textColor="@color/white"
+        android:onClick="openRegularLogin"
+        android:textSize="16dp"
+        android:text="@string/need_help_text" />
+
+</LinearLayout>

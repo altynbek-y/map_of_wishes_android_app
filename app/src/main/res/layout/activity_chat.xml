@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unicef.dreamapp2.ui.chat.ChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/chatBarLayout"
+        app:elevation="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chatBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back_24dp"
+            android:addStatesFromChildren="false"
+            app:title="Iman Coder"
+            app:titleTextColor="@color/white"
+            app:titleMarginStart="16dp">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               app:civ_border_color="@color/colorPrimary"
+               app:civ_border_width="1dp"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/picture"
+               android:visibility="gone"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--
+            android:paddingTop="?attr/actionBarSize"
+    -->
+
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messageList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/message_item" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <EditText
+                android:id="@+id/messageEdit"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:focusedByDefault="true"
+                android:imeOptions="actionDone"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/enter_message_hint"
+                android:background="@drawable/msg_text_background"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/sendMessage"
+                app:srcCompat="@drawable/ic_send_message_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

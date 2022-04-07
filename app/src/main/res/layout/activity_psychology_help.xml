@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.psychology.PsychologyHelp"
+    android:background="@color/blackness">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="Страница находится на стадии разработки..."
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifI"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

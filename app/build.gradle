@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    defaultConfig {
+        applicationId "com.unicef.dreamapp2"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 6
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        debug {
+            manifestPlaceholders = [google_map_key: "AIzaSyBZzS1IHntJpVeBnbM5fMfg6apAcbZBD2c"]
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //  manifestPlaceholders = [google_map_key: "AIzaSyAkT5BfHnyj71_1BTWaVSpzM4jW50krR5s"]
+            manifestPlaceholders = [google_map_key: "AIzaSyBWvyqYPeOWPoEe-wVnFhDdgkt4pSoWUcc"]
+        }
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+}
+dependencies {
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.android.support:design:30.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.android.support:appcompat-v7:30.1.0'
+    implementation 'com.github.clans:fab:1.6.2'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    //Firebase
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.firebase:geofire-android:3.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-firestore:21.6.0'
+
+    // Multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    // Country Code Picker
+    implementation 'com.hbb20:ccp:2.2.3'
+
+    // Circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+
+    // Tutorial
+    implementation 'uk.co.samuelwall:material-tap-target-prompt:3.0.0'
+
+    // Localization
+    implementation "com.github.YarikSOffice:lingver:1.3.0"
+
+    // EasyPermissions
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // AndroidX Capable version
+    implementation 'com.github.AppIntro:AppIntro:6.0.0'
+
+    // For developers using the Android Support Library
+    // implementation 'pub.devrel:easypermissions:2.0.1'
+}
